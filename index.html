@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our fitness club today to get fit and feel strong. Transform your body and mind with expert guidance and a supportive community!">
+    <meta name="keywords" content="Kropp, Fitness, Club, Transform, Sport, Gym">
+    <meta name="author" content="Kropp Fitness Club">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no, email=no,
+    address=no, date=no, url=no">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="width">
+
     <title>Kropp Fitness</title>
 
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://stepan.city70.ru/crossfit/?v=2"/>
+    <meta property="og:title" content="Kropp Fitness"/>
+    <meta property="og:description" content="Join our fitness club today to get fit and feel strong. Transform your body and mind with expert guidance and a supportive community!"/>
+    <meta property="og:image" content="https://stepan.city70.ru/crossfit/images/motivation/1.jpg"/>
+
+    <link rel="shortcut icon" href="icons/dumbbell-alt.png" type="image/png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <a class="header-logo" href="/">
+        <a class="header-logo" href="#">
             <img class="header-logo-image" src="images/header-logo-kropp.png" alt="Логотип Kropp Fitness" height="25" width="135">
         </a>
 
         <nav class="header-menu">
             <ul class="header-menu-list">
-                <li class="header-menu-item"><a class="header-menu-link is-current" href="/">Home</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="/">Pages</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="/">Portfolio</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="/">Blog</a></li>
-                <li class="header-menu-item"><a class="header-menu-link" href="/">Shop</a></li>
+                <li class="header-menu-item"><a class="header-menu-link is-current" href="#">Home</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#">Pages</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#">Portfolio</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#">Blog</a></li>
+                <li class="header-menu-item"><a class="header-menu-link" href="#">Shop</a></li>
             </ul>
         </nav>
 
@@ -72,7 +89,7 @@
                             <div class="motivation-card-description">
                                 <p>Unum solum justo ex ius. Pro cu probo laboramus eius insolens euripidis te eos, ut agam tota.</p>
                             </div>
-                            <a href="/" class="motivation-card-button button transparent">View more</a>
+                            <a href="#" class="motivation-card-button button transparent">View more</a>
                         </div>
                         <img src="./images/motivation/1.jpg" alt="man doing pull-ups on horizontal bar" width="518" height="760" class="motivation-card-image">
                     </div>
@@ -84,7 +101,7 @@
                             <div class="motivation-card-description">
                                 <p>Sed abhorreant constituam consectetuer eu. At mei clita deserunt, his movet molestie nemore.</p>
                             </div>
-                            <a href="/" class="motivation-card-button button transparent">View more</a>
+                            <a href="#" class="motivation-card-button button transparent">View more</a>
                         </div>
                         <img src="./images/motivation/2.jpg" alt="man with dumbbell" width="518" height="760" class="motivation-card-image">
                     </div>
@@ -119,6 +136,37 @@
                     <h3 class="training-types-item-title">body sculpt</h3>
                 </li>
             </ul>
+        </section>
+        <section class="join-us">
+            <div class="join-us-video-wrapper">
+                <video 
+                class="join-us-video" 
+                src="" 
+                width="960" height="600"
+                poster="./images/join-us/video-placeholder.png"
+                ></video>
+                <button class="join-us-video-play-button">Play</button>
+            </div>
+            <div class="join-us-body container">
+                <h2 class="join-us-title">Join us</h2>
+                <form action="/" class="join-us-form">
+                    <header class="join-us-form-header">
+                        <h3 class="join-us-form-title backdrop-title cantered title-big" data-title="Go!">Start here</h3>
+                        <div class="join-us-form-subtitle section-description">
+                            <p>fill the form below to start your journey</p>
+                        </div>
+                    </header>
+                    <div class="join-us-form-body">
+                        <label class="visually-hidden" for="username">Name</label>
+                        <input class="join-us-form-input input" id="username" type="text" placeholder="Name">
+
+                        <label class="visually-hidden" for="email">Email</label>
+                        <input class="join-us-form-input input" id="email" type="email" placeholder="Email">
+                 
+                        <button class="join-us-button button transparent" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 </body>
