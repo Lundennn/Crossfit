@@ -48,6 +48,21 @@
     --header-height: 90px;
 }
 
+/* @media (prefers-color-scheme: light) {
+  :root {
+    --color-dark: #FFFFFF;
+    --color-dark-alternate: #F0F0F0;
+    --color-light: #000000;
+    --color-dark-grey: #B0B0B0;
+    --color-light-grey: #E0E0E0;
+  }
+}
+*/
+
+html {
+  scrollbar-color: var(--color-light) var(--color-dark-alternate);
+}
+
 body {
     background-color: var(--color-dark);
     color: var(--color-light-grey);
@@ -388,7 +403,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .motivation-card-description {
-  width: 400px;
+  width: clamp(270px, 20.8vw, 400px);
 }
 
 .motivation-card-description:not(:last-child) {
@@ -547,6 +562,10 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-light-grey);
 }
 
+.input:focus::placeholder {
+  color: var(--color-dark);
+}
+
 .input:hover {
   border-color: var(--color-light);
 }
@@ -695,5 +714,15 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
+  }
+
+  .banner {
+    min-height: calc(100vh - var(--header-height) - 60px);
+  }
+}
+
+@media (max-width: 360px) {
+  .banner {
+    min-height: calc(100vh - var(--header-height) - 150px);
   }
 }
