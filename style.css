@@ -557,6 +557,10 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
+.input:focus::placeholder {
+  color: var(--color-dark);
+}
+
 .join-us-form-input {
   max-width: 400px;
 }
@@ -614,6 +618,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .join-us-form-header:not(:last-child) {
     margin-bottom: 80px;
+  }
+
+  .banner {
+    min-height: calc(100vh - var(--header-height) - 60px);
   }
 }
 
@@ -696,4 +704,10 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     row-gap: 20px;
   }
+}
+
+@media (max-width: 360px) {
+  .banner {
+    min-height: calc(100vh - var(--header-height) - 150px);
+  }  
 }
